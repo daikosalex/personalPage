@@ -1,0 +1,30 @@
+
+<%- include("partials/header.ejs") %>
+
+
+    <div>
+        <a href="/contact" class="button">Contact me</a>
+    </div>
+
+    <div class="button">
+        <a href="/about" class="button">Spotify</a>
+    </div>
+
+    <div class="form">
+        <form action="submit" method="post">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="container">
+        
+        <img class="profile" src="images/cover.jpg" alt="album cover">
+    </div>
+    
+<%- include("partials/footer.ejs") %>
